@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <!-- html稱根源素(root element) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta是紀錄文件資訊 -->
+    <!-- 這兩行是必須 正常顯示語系 響應式網頁專用 -->
+    <meta name="description" content="這是我第一個網頁">
+    <!-- 網頁的描述 -->
+    <title>標籤練習</title>
+    <!-- 網(分)頁的名稱 -->
+</head>
+<!-- head是存放網頁相關資訊 -->
+<!-- 大部分標籤頭尾一對 少數只有頭 -->
+    <style>
+        body{
+            padding-bottom:300px;
+        }
+        /* 網頁下面留白 */
+    </style>
+<body>
+    <h1>
+        h1這是標題
+        <!-- 註解Ctrl + / -->
+    </h1>
+    <h2>
+        h2
+    </h2>
+    <h3>
+        h3
+    </h3>
+    <h4>
+        h4
+    </h4>
+    <h5>
+        h5
+    </h5>
+    <h6>
+        h6
+    </h6>
+    <h2>
+        h1~6 分別代表html預設字型大小 可用css更改
+    </h2>
+    <!-- h1~6 分別代表html預設字型大小 可用css更改-->
+    <!-- html 用標籤標記內容，產生結構 -->
+
+    <hr>
+
+    <h3>hr 是水平線</h3>
+    <!-- hr是水平線 -->
+    
+    <hr>
+
+    <a href="https://www.google.com" style="color:red" target="_blank">前往google</a>
+    <a href="https://www.google.com"><img src="https://picsum.photos/300/200/?random=10 alt=" target="_blank"></a>
+    <h2>a是超連結 href是屬性(連結) 後面是顯示名稱</h2>
+    <!-- a是超連結 href是屬性(連結) 後面是顯示名稱-->
+    <h2>style="color"是調整顯示文字顏色</h2>
+    <!-- style color是調整顯示文字顏色 -->
+    <h2>target="_blank"是點連結後會彈出新分頁</h2>
+    <!-- target _blank是點連結後會彈出新分頁-->
+    <h2>a也可以標記假圖(picsum)</h2>
+    <!-- a也可以標記假圖 -->
+    <!-- picsum 假圖 -->
+    <!-- 特定標籤有特定屬性 -->
+
+    <hr>
+
+    <h2>p是段落(paragraph)將文字內容分段</h2>
+    <!-- p是段落(paragraph)將文字內容分段 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores delectus corporis itaque. Qui neque in recusandae sequi, enim, minima cumque distinctio non numquam odio quos iste accusamus modi impedit?</p>
+    <h2>lorem n 產生n個假字</h2>
+    <!-- lorem n 產生n個假字 -->
+    <p>開始一台形式厲害頻率，難以教材外面證書中港路，名稱應該關鍵商城收藏<br> 當年在我速度，計算機設置教材位元有限健康人事房產主任高級答應此外，義務排行瘋狂，則是宜蘭一部分任意今日科學效率員工，銀行你們的藥品去年服飾，免費所屬二十彼此白色書庫，周圍命運予以，學校本公。</p>
+    <h2>ctlorem n 產生n個假字(中文)</h2>
+    <!-- ctlorem n 產生n個假字 -->
+
+    <hr>
+
+    <h3>br是文字換行</h3>
+    <!-- br是文字換行 -->
+
+    <hr>
+
+    <h3>按住Alt+滑鼠 選擇段落一起編輯 或是 Alt+Shift 選頭尾編輯</h3>
+<!-- 按住Alt+滑鼠 選擇段落一起編輯 或是 Alt+Shift 選頭尾編輯-->
+    <h3>home / end鍵可以跳到單行程式頭/尾</h3>
+<!-- home / end鍵可以跳到單行程式頭/尾 -->
+    
+    <hr>
+
+    <ul>
+        <li>
+            項目一
+        </li>
+        <li>
+            項目二
+        </li>
+        <li>
+            項目三
+        </li>
+    </ul>
+    <p>ul無序清單（unordered list）</p>
+    <!-- ul無序清單（unordered list） -->
+    <!-- ul是父元素 li子元素 -->
+    <ol>
+        <li>
+            項目一
+        </li>
+        <li>
+            項目二
+        </li>
+        <li>
+            項目三
+        </li>
+    </ol>
+    <p>ol有序清單（ordered list）</p>
+    <!-- ol有序清單（ordered list） -->
+
+    <hr>
+
+    <h2>html巢狀</h2>
+    <!-- emment打法 -->
+    <p>
+        輸入ul>li*2會產生以下 <br>
+        <ul>
+            <li>&lt;ul&gt;<br></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br></li>
+            <li>&lt;/ul&gt;<br></li>
+        </ul>
+    </p>
+    <!-- ul>li*2 -->
+    <p>
+        輸入ol>li*3>ul會產生以下 <br>
+        <ol>
+            &lt;ol&gt;
+            <li>
+                <ul>&lt;li&gt;<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;ul&gt;<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;/ul&gt;<br> 
+                    &lt;/li&gt;<br>
+                </ul>
+            </li>
+            <li>
+                <ul>&lt;li&gt;<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;ul&gt;<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;/ul&gt;<br> 
+                    &lt;/li&gt;<br>
+                </ul>
+            </li>
+            <li>
+                <ul>&lt;li&gt;<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;ul&gt;<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;/ul&gt;<br> 
+                    &lt;/li&gt;<br>
+                </ul>
+            </li>
+            &lt;/ol&gt;
+        </ol>
+    </p>
+    <!-- ol>li*3>ul -->
+
+    <hr>
+
+    <h2 id="pic">插入圖片</h2>
+    <!-- 絕對路徑：一般指連結到外部連結或資源 -->
+    <!-- 相對路徑：從當下編輯文件的位置作為起點去找目標檔案 -->
+    <h3>絕對路徑：一般指連結到外部連結或資源</h3>
+    <img src="https://fgo.kazemai.io/common/images/CharaGraph/1000800c.png" alt=""width="400">
+    <p>img是插入圖片 src是資料網址/文件路徑 alt是替代文字(當除片連結失效時，出現的文字) <br>width是設定圖片寬度(圖片大小只對高或寬去做設定，另一邊瀏覽器會自動調整，同時設定比例會亂</p>
+    <!-- img是插入圖片 src是資料網址/文件路徑 
+     alt是替代文字(當除片連結失效時，出現的文字) 
+     title是圖片名稱(當滑鼠移上圖片顯示的文字)
+     width是設定圖片寬度(圖片大小只對高或寬去做設定，另一邊瀏覽器會自動調整，同時設定比例會亂)-->
+    <h3>相對路徑：從當下編輯文件的位置作為起點去找目標檔案</h3>
+
+    <img src="./images/1000800c_.png" alt="Illya1" title="1" width="300">
+    <img src="./images/502800c_.png" alt="Illya2" title="2" width="300">
+    <img src="./images/204200c_.png" alt="Illya3" title="3" width="300">
+
+    <hr>
+
+    <h2>頁框 iframe</h2>
+    <a href="./others/hello/hello.html" target="exam">載入</a>
+    <h3>a連結點擊時要載入指定連結</h3>
+    <h3>target與name作為綁定關聯，才能點擊時將文件載入到iframe</h3>
+    <!-- a連結點擊時要載入指定連結 -->
+    <!-- target與name作為綁定關聯，才能點擊時將文件載入到iframe -->
+    <iframe src="./main.html" frameborder="1" width="800" height="400" name="exam"></iframe>
+    <p>
+        src 的 main.html 為 iframe 預設頁面 <br>
+        frameborder 0無邊框 1有邊框
+    </p>
+    <!-- src 的 main.html 為 iframe 預設頁面 -->
+    <!-- frameborder 0無邊框 1有邊框 -->
+
+    <hr>
+    
+    <h2>各種字體標籤</h2>
+    <b>Bold 粗體</b>
+    <br>
+    <strong>Bold 粗體</strong>
+
+    <br>
+    
+    <i>italic 斜體</i>
+    <br>
+    <em>italic 斜體</em>
+
+    <br>
+
+    <u>underline 底線</u>
+    <br>
+    <ins>underline 底線</ins>
+
+    <br>
+
+    <s>strike 刪除線</s>
+    <br>
+    <del>strike 刪除線</del>
+
+    <hr>
+
+    <h3>sup 上標</h3>
+    x <sup>2</sup> <br>
+    <!-- sup 上標(x平方) -->
+    <h3>sub 下標</h3>
+    CO <sub>2</sub> <br>
+    <!-- sub 下標(二氧化碳) -->
+
+    <hr>
+
+    <h2>pre 與 code 標籤</h2>
+    <!-- pre可以將空白標記出來 -->
+    <!-- code可以用來標記程式碼內容 -->
+    <pre>
+        <code>
+            function addTwoNum(a,b){
+                return a + b
+            }
+        </code>
+    </pre>
+    <h4>pre可以將空白標記出來</h4>
+    <h4>code可以用來標記程式碼內容</h4>
+
+    <hr>
+
+    <h2>跳脫字元</h2>
+    <pre>
+        <code>
+            &lt; &nbsp; &gt; &nbsp; &copy;
+            &lt;html&gt;
+                &lt;head&gt;
+                
+                &lt;/head&gt;
+                &lt;body&gt;
+                
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <!-- &lt 是小於(less than) -->
+    <!-- &gt 是大於(greater than) -->
+    <!-- &copy 是版權(copyright) -->
+    <!-- &nbsp 是空格(space) -->
+
+    <script>
+        function addTwoNum(a,b){
+            return a + b
+        }
+    </script>
+
+    <hr>
+
+    <h2>表格</h2>
+    
+    <table border="1" width="600" align="center" cellspacing="10" cellpadding="5">
+    <!-- cellspacing 兩格子之間的距離 -->
+    <!-- cellpadding 格子內部與文字內容的距離 -->
+        <caption>
+        <!-- caption 表格標題 -->
+        前端班成績
+            <thead>
+            <!-- thead 表頭 -->
+                <tr>
+                    <th>姓名</th>
+                    <th>網頁排版</th>
+                    <th>程式設計</th>
+                </tr>
+                <!-- tr幾列 td幾欄 th水平置中-->
+            </thead>
+            <tbody>
+            <!-- tbody 表身 -->
+                <tr align="center">
+                <!-- align="center"水平置中 -->
+                    <td>一</td>
+                    <td>100</td>
+                    <td>60</td>
+                </tr>
+                <tr align="center">
+                    <td>二</td>
+                    <td>90</td>
+                    <td>70</td>
+                </tr>
+                <tr align="center">
+                    <td>三</td>
+                    <td>80</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <!-- tfoot 表尾 -->
+                <tr align="center">
+                    <td>共三人</td>
+                    <td>總平均:90</td>
+                    <td>總平均:70</td>
+                </tr>
+            </tfoot>
+        </caption>
+    </table>
+<!-- 選擇字 Ctrl + d(按幾下就幾個) 一次替換字母  -->
+<!-- 選擇程式碼 按住Alt + 上/下 可以一次往上/下搬運 -->
+
+    <hr>
+
+    <h2>表格合併</h2>
+
+    <h3>colspan(欄合併):左吃右 右消失 colspan="吃幾個+自己"</h3>
+    <h3>rowspan(列合併):上吃下 下消失 rowspan="吃幾個+自己"</h3>
+
+    <!-- table>tr*6>td{$}*6 -->
+    <table border="1" width="600" align="center" cellspacing="5" cellpadding="5">
+        <tr>
+            <td colspan="3">1</td>
+            <td>4</td>
+            <td colspan="2">5</td>
+        </tr>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td colspan="3" rowspan="3">4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>常用表單</h2>
+
+    <form>
+        <table border="1" width="600" align="center" cellspacing="5" cellpadding="5">
+            <tr>
+                <td width="100">帳號:</td>
+                <td>
+                    <input type="text" size="30" maxlength="10" placeholder="請輸入帳號 最多10位" name="ac">
+                    <!-- type 欄位類型 有很多種 -->
+                    <!-- size 寬度 -->
+                    <!-- maxlength 最大字元數 -->
+                    <!-- placeholder 預設的佔位文字 -->
+                </td>
+            </tr>
+            <tr>
+                <td>密碼:</td>
+                <td><input type="password" size="30" maxlength="10" placeholder="請輸入密碼 最多10位" name="pw"></td>
+            </tr>
+            <tr>
+                <td>性別:</td>
+                <td>
+                    <input type="radio" name="gender" value="男" checked>男
+                    <input type="radio" name="gender" value="女">女
+                    <!-- radio 為單選 name相同則排異 -->
+                    <!-- checked 表示預設勾選 -->
+                </td>
+            </tr>
+            <tr>
+                <td>興趣:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="1">1
+                    <input type="checkbox" name="hobby" value="2">2
+                    <input type="checkbox" name="hobby" value="3">3
+                    <input type="checkbox" name="hobby" value="4">4
+                    <input type="checkbox" name="hobby" value="5">5
+                </td>
+            </tr>
+            <tr>
+                <td>居住地</td>
+                <td>
+                    <select name="city">
+                        <option value="一">一</option>
+                        <option value="二">二</option>
+                        <option value="三">三</option>
+                        <option value="四">四</option>
+                        <option value="五">五</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>上傳檔案:</td>
+                <td><input type="file" name="upload_file"></td>
+            </tr>
+            <tr>
+                <td>留言訊息</td>
+                <td><textarea name="message" cols="50" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="送出">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>div 與 span標籤</h2>
+    <div>div 是區塊標籤家族的一員</div>
+    <span>span 是行內標籤家族的一員</span>
+
+    <hr>
+
+    <a href="#">TOP</a>
+    <!-- 跳到最上面 -->
+    <a href="#pic">跳到圖片</a>
+    <!-- 跳到指定#ID -->
+</body>
+</html> 
