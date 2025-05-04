@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background: lightgoldenrodyellow;
+            display: flex;
+            height: 500px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .flex-item{
+            background: lightblue;
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+    
+
+        &.c{
+            background: palegreen;
+            flex-grow: 2;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container">
+        <div class="flex-item a">A</div>
+        <div class="flex-item b">B</div>
+        <div class="flex-item c">C</div>
+        <div class="flex-item d">D</div>
+        <div class="flex-item e">E</div>
+        <div class="special-item">
+</body>
+</html>
